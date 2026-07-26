@@ -1,0 +1,251 @@
+.kame-logo-section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 2.5rem;
+  width: 100%;
+  min-height: 100dvh;
+  background: radial-gradient(ellipse 80% 60% at 50% 45%, #0a1a30 0%, #04030f 70%);
+  overflow: hidden;
+}
+
+/* ---- シーケンスのタイムライン(ここをいじれば全体の間合いを調整できる) ----
+   0.00s〜 か→め→ぶ→ろ→ぐ が 0.2s 間隔でポンポン落下(落下 0.6s・接地は 0.24s)
+   1.04s   ぐ の着地と同時にキラキラ3本が文字側からぽよっ
+   1.60s   丸みっつ ポポポン(0.11s 間隔)
+   1.95s   波が左から右へシュッ
+   2.80s   水飛沫ぽよっ + ぶ→ろ→ぐ が順番にちょっとはずんで完了 */
+.kame-logo {
+  --t-sparkle: 1.04s;
+  --t-dot: 1.6s;
+  --t-wave: 1.95s;
+  --t-splash: 2.8s;
+
+  width: min(90vw, 1100px);
+  height: auto;
+  overflow: visible;
+  cursor: pointer;
+  filter: drop-shadow(0 0 28px rgba(125, 217, 253, 0.22));
+
+  & g,
+  & path {
+    transform-box: fill-box;
+    transform-origin: center;
+    will-change: transform;
+  }
+}
+
+.kame-logo-hint {
+  margin: 0;
+  font: 600 0.7rem/1 var(--mono, ui-monospace, monospace);
+  letter-spacing: 0.4em;
+  color: rgba(155, 217, 253, 0.45);
+  text-transform: uppercase;
+}
+
+/* ---- 1. 文字 — 低めの高さから順番にポンポン落ちて小さく跳ねる ---- */
+
+.kl-char {
+  animation: kl-drop 0.6s var(--d, 0s) both;
+}
+
+/* 落下順(svg 直下の 1〜5 番目 = か・め・ぶ・ろ・ぐ) */
+.kl-char:nth-child(1) {
+  --d: 0s;
+}
+.kl-char:nth-child(2) {
+  --d: 0.2s;
+}
+.kl-char:nth-child(3) {
+  --d: 0.4s;
+  --hop-d: 0s;
+}
+.kl-char:nth-child(4) {
+  --d: 0.6s;
+  --hop-d: 0.13s;
+}
+.kl-char:nth-child(5) {
+  --d: 0.8s;
+  --hop-d: 0.26s;
+}
+
+/* ぶ・ろ・ぐ は雫が出るタイミングで順番にちょっとはずむ。
+   2本目の kl-char-hop に fill を付けないのがポイント —
+   both にすると待機中の 0% 値が kl-drop の落下を上書きしてしまう */
+.kl-char:nth-child(3),
+.kl-char:nth-child(4),
+.kl-char:nth-child(5) {
+  animation:
+    kl-drop 0.6s var(--d, 0s) both,
+    kl-char-hop 0.42s calc(var(--t-splash) + var(--hop-d, 0s)) ease-in-out;
+}
+
+@keyframes kl-char-hop {
+  0%,
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+  30% {
+    transform: translateY(-18px) scale(0.97, 1.04);
+  }
+  55% {
+    transform: translateY(0) scale(1.06, 0.94);
+  }
+  78% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes kl-drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-220px);
+    animation-timing-function: cubic-bezier(0.5, 0, 0.85, 0.4); /* 落下は加速 */
+  }
+  10% {
+    opacity: 1;
+  }
+  40% {
+    /* 着地 — ぐにゃっと潰れる */
+    transform: translateY(0) scale(1.12, 0.84);
+    animation-timing-function: cubic-bezier(0.2, 0.9, 0.4, 1);
+  }
+  62% {
+    /* 小さく跳ね上がる */
+    transform: translateY(-26px) scale(0.97, 1.05);
+    animation-timing-function: cubic-bezier(0.5, 0, 0.85, 0.4);
+  }
+  80% {
+    transform: translateY(0) scale(1.05, 0.95);
+  }
+  90% {
+    transform: translateY(-7px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1, 1);
+  }
+}
+
+/* ---- 2. キラキラ3本 — ぐ の着地と同時に、文字側から小さく→ぽよっと生える ---- */
+
+.kl-stamp {
+  transform-origin: 0% 100%; /* 左下 = ぐ 側を起点に伸びる */
+  /* 2本目はフィナーレで ぐ のはずみ(--t-splash + 0.26s)に合わせたぽよっ。fill なし(kl-char-hop と同じ理由) */
+  animation:
+    kl-sparkle-poyo 0.45s var(--t-sparkle) cubic-bezier(0.34, 1.9, 0.5, 1) both,
+    kl-sparkle-hop 0.42s calc(var(--t-splash) + 0.26s) ease-in-out;
+}
+
+@keyframes kl-sparkle-hop {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.2);
+  }
+  62% {
+    transform: scale(0.92);
+  }
+  82% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes kl-sparkle-poyo {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+  80% {
+    transform: scale(0.94);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ---- 3. 丸みっつ — 左から順番にポポポン ---- */
+
+.kl-dot {
+  animation: kl-dot-pop 0.4s calc(var(--t-dot) + var(--i, 0) * 0.11s)
+    cubic-bezier(0.34, 1.9, 0.5, 1) both;
+}
+
+@keyframes kl-dot-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ---- 4. 波 — 左から右へシュッと走る ---- */
+
+.kl-wave {
+  animation: kl-wave-sweep 0.55s var(--t-wave) cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes kl-wave-sweep {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* ---- 5. 水飛沫 — 文字側からピュッと飛び出して、着地点でぽよんと止まる ---- */
+
+.kl-splash {
+  animation: kl-squirt 0.35s calc(var(--t-splash) + var(--i, 0) * 0.07s) both;
+}
+
+/* 飛び出しの始点(文字側へのオフセット)。雫ごとに軌道を変える */
+.kl-splash:nth-last-child(2) {
+  /* 大きい雫(上)— 右下から左上へ飛ぶ */
+  --fx: 46px;
+  --fy: 30px;
+}
+.kl-splash:last-child {
+  /* 小さい雫(下)— 右からほぼ真横に飛ぶ */
+  --fx: 52px;
+  --fy: 8px;
+}
+
+@keyframes kl-squirt {
+  0% {
+    opacity: 0;
+    /* 文字側の始点から、小さく・進行方向に細長い状態でスタート */
+    transform: translate(var(--fx, 46px), var(--fy, 20px)) scale(0.2, 0.1) rotate(10deg);
+    animation-timing-function: cubic-bezier(0.15, 0.7, 0.3, 1); /* ピュッと飛んで減速 */
+  }
+  12% {
+    opacity: 1;
+  }
+  55% {
+    /* 少し行き過ぎつつ、飛んでいる間は横に伸びる */
+    transform: translate(calc(var(--fx, 46px) * -0.12), calc(var(--fy, 20px) * -0.12))
+      scale(1.2, 0.82) rotate(-4deg);
+  }
+  75% {
+    transform: translate(0, 0) scale(0.94, 1.06);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1, 1) rotate(0deg);
+  }
+}

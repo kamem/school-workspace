@@ -1,0 +1,93 @@
+.home {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  padding: clamp(1.5rem, 6vw, 6rem);
+  background:
+    radial-gradient(ellipse 80% 60% at 70% -10%, rgba(55, 231, 255, 0.12), transparent),
+    radial-gradient(ellipse 60% 50% at 20% 110%, rgba(255, 77, 210, 0.1), transparent), #04030f;
+  color: #fff;
+}
+
+.home-tag {
+  margin: 0 0 0.8rem;
+  font: 700 0.75rem/1 var(--mono, ui-monospace, monospace);
+  letter-spacing: 0.4em;
+  color: #7df9ff;
+}
+
+.home-title {
+  margin: 0;
+  font-family: 'Hiragino Sans', 'Yu Gothic', 'Noto Sans JP', sans-serif;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 0.04em;
+}
+
+.home-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  max-width: 900px;
+}
+
+.home-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.8rem 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  color: #fff;
+  text-decoration: none;
+  transition:
+    border-color 0.25s,
+    background 0.25s,
+    transform 0.25s;
+
+  &:hover {
+    border-color: rgba(125, 249, 255, 0.6);
+    background: rgba(125, 249, 255, 0.06);
+    transform: translateY(-3px);
+
+    & .home-card-arrow {
+      transform: translateX(0.4em);
+      color: #7df9ff;
+    }
+  }
+}
+
+.home-card-no {
+  font: 700 0.7rem/1 var(--mono, ui-monospace, monospace);
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.home-card-title {
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 0.03em;
+}
+
+.home-card-desc {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.home-card-arrow {
+  position: absolute;
+  right: 1.4rem;
+  top: 1.6rem;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.4);
+  transition:
+    transform 0.25s,
+    color 0.25s;
+}

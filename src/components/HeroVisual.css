@@ -1,0 +1,256 @@
+.hero-visual {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  background: #04030f;
+
+  & .hero-canvas {
+    position: absolute !important;
+    inset: 0;
+  }
+}
+
+/* ---- カットごとのレイアウト ---- */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 clamp(1.5rem, 8vw, 8rem);
+  pointer-events: none;
+  color: #fff;
+  /* 着地の衝撃 — 文字が出そろった直後に画面ごと揺らす */
+  animation: overlay-impact 0.45s 0.28s ease-out;
+
+  &.layout-right {
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 18vh;
+
+    & .hero-line {
+      transform: skewX(6deg);
+      text-align: right;
+    }
+  }
+
+  &.layout-center {
+    align-items: center;
+
+    & .hero-line {
+      font-size: clamp(2rem, 6vw, 4.6rem);
+    }
+  }
+
+  &.layout-title {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.hero-tag {
+  margin: 0 0 1rem;
+  font: 700 0.8rem/1 var(--mono, ui-monospace, monospace);
+  letter-spacing: 0.4em;
+  color: #7df9ff;
+  text-transform: uppercase;
+  animation: fade-slide 0.5s 0.15s both;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 2.5em;
+    height: 1px;
+    margin-right: 1em;
+    vertical-align: middle;
+    background: linear-gradient(90deg, transparent, #7df9ff);
+  }
+}
+
+.hero-line {
+  margin: 0;
+  font-family: 'Hiragino Sans', 'Yu Gothic', 'Noto Sans JP', sans-serif;
+  font-size: clamp(2.6rem, 8vw, 6.5rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  transform: skewX(-6deg);
+  /* アニメ的な色ズレ(疑似色収差) */
+  text-shadow:
+    0.045em 0 0 rgba(55, 231, 255, 0.45),
+    -0.045em 0 0 rgba(255, 77, 210, 0.45),
+    0 0 2em rgba(125, 249, 255, 0.25);
+}
+
+.hero-line-title {
+  font-size: clamp(3.2rem, 10vw, 8rem);
+  text-shadow: none;
+
+  /* グラデーションは親ではなく各文字に適用する。
+     親に background-clip: text を置くと、transform アニメーション中の
+     子 span が合成レイヤーに分離され、文字が塗り潰しの塊になる */
+  & .slam-char {
+    background: linear-gradient(175deg, #ffffff 15%, #a8ecff 45%, #ff8fdc 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    filter: drop-shadow(0 0 0.25em rgba(125, 249, 255, 0.35));
+  }
+}
+
+.hero-sub {
+  margin: 1.6rem 0 0;
+  font: 600 0.85rem/1 var(--mono, ui-monospace, monospace);
+  letter-spacing: 0.5em;
+  color: rgba(255, 255, 255, 0.55);
+  text-transform: uppercase;
+  animation: fade-slide 0.5s 0.45s both;
+}
+
+/* ---- 文字の叩き込みアニメーション ---- */
+
+.slam-char {
+  display: inline-block;
+  animation: char-slam 0.5s cubic-bezier(0.18, 1.5, 0.3, 1) both;
+  will-change: transform, opacity, filter;
+}
+
+@keyframes char-slam {
+  0% {
+    opacity: 0;
+    transform: translateY(0.25em) scale(2.4) skewX(-18deg) rotate(4deg);
+    filter: blur(10px);
+  }
+  55% {
+    opacity: 1;
+    transform: translateY(-0.03em) scale(0.94);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes overlay-impact {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-0.5%, 0.6%) rotate(-0.3deg);
+  }
+  45% {
+    transform: translate(0.4%, -0.4%) rotate(0.2deg);
+  }
+  70% {
+    transform: translate(-0.2%, 0.2%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fade-slide {
+  from {
+    opacity: 0;
+    transform: translateX(-1.5em);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ---- カット切替のフラッシュ ---- */
+
+.cut-flash {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  animation: cut-flash 0.35s ease-out both;
+}
+
+@keyframes cut-flash {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ---- カットカウンター ---- */
+
+.cut-indicator {
+  position: absolute;
+  right: clamp(1.5rem, 4vw, 3rem);
+  bottom: clamp(2.5rem, 6vh, 4rem);
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  pointer-events: none;
+  font: 600 0.7rem/1 var(--mono, ui-monospace, monospace);
+  letter-spacing: 0.25em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.cut-ticks {
+  display: flex;
+  gap: 0.4em;
+
+  & i {
+    width: 1.4em;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: background 0.2s;
+
+    &.on {
+      background: #7df9ff;
+      box-shadow: 0 0 6px rgba(125, 249, 255, 0.8);
+    }
+  }
+}
+
+/* ---- 画面端の装飾フレーム — OPのレターボックス風 ---- */
+
+.hero-frame {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: clamp(12px, 3vh, 28px);
+    background: #000;
+  }
+
+  &::before {
+    top: 0;
+    border-bottom: 1px solid rgba(125, 249, 255, 0.25);
+  }
+
+  &::after {
+    bottom: 0;
+    border-top: 1px solid rgba(255, 95, 208, 0.25);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-tag {
+    letter-spacing: 0.25em;
+  }
+
+  .hero-sub {
+    letter-spacing: 0.3em;
+  }
+}

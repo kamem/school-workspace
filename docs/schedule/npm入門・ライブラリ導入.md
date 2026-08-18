@@ -7,15 +7,27 @@
 
 ---
 
-## ねらい
+## この回でやること
 
-package.jsonの役割とnpm scriptsを理解し、ライブラリを自分で導入して動かすところまで体験する。
+package.jsonの役割とnpm scriptsを知り、ライブラリを自分で導入して自分のページで動かすところまで体験する。
 
-## 進め方（後半90分）
+## 手順
 
-- npmとは / package.jsonの読み方 / dependenciesとdevDependencies / npm scripts
-- `npm init` → ライブラリを実際に導入して自分のページで動かす
-- node_modulesと.gitignoreの関係、`npx`の使い方
+### 1. npmとpackage.jsonを知る
+
+- npmとは / package.jsonの読み方
+- dependenciesとdevDependenciesの違い
+- npm scripts
+
+### 2. ライブラリを導入して動かす
+
+- `npm init` でプロジェクトを初期化する
+- ライブラリを実際に導入して自分のページで動かす
+
+### 3. 周辺の仕組みを押さえる
+
+- node_modulesと.gitignoreの関係
+- `npx` の使い方
 
 ## 導入しやすいライブラリ例（見た目にすぐ効くもの）
 
@@ -25,11 +37,11 @@ package.jsonの役割とnpm scriptsを理解し、ライブラリを自分で導
 - [**canvas-confetti**](https://github.com/catdad/canvas-confetti) — 紙吹雪。1行で動いて盛り上がる
 - [**dayjs**](https://day.js.org/) — 日付の表示・計算
 
-まずcanvas-confettiやAOSのような「数行で動く」ものから入り、Swiperで「ドキュメントを読んで組み込む」体験をさせる。
+まずcanvas-confettiやAOSのような「数行で動く」ものから入り、Swiperで「ドキュメントを読んで組み込む」体験に進むのがおすすめ。
 
-## 備考
+## 注意
 
-- Git・GitHubは前期に実施済み。必要に応じてこの回で軽く復習（pushまでの流れ）
+- Git・GitHubは前期に実施済み。pushまでの流れを忘れていたら、この回で軽く復習しておく
 
 ## 宿題
 

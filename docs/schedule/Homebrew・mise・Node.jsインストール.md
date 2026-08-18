@@ -7,11 +7,11 @@
 
 ---
 
-## ねらい
+## この回でやること
 
-以降の授業で使うNode.js環境を全員分整える。バージョン管理ツール（mise）経由で入れることで、プロジェクトごとにNodeのバージョンを切り替えられる状態にする。
+以降の授業で使うNode.js環境を作る。バージョン管理ツール（mise）経由で入れることで、プロジェクトごとにNodeのバージョンを切り替えられる状態にする。
 
-## 進め方（中盤30分）
+## 手順
 
 Homebrew → mise → Node.js の順に入れる。
 
@@ -99,12 +99,6 @@ npm -v
 
 miseとfnmの対応: `mise use --global node@lts` ↔ `fnm install --lts` + `fnm default`
 
-## 準備
-
-- [ ] 学生のPC環境（Mac/Windows）を事前確認
-- [ ] Windowsの学生がGit for Windows（Git Bash）導入済みか確認
-
-## 備考
+## 注意
 
 - うまくいかない場合の退避策: Node.js[公式インストーラー](https://nodejs.org/)で直接入れても授業は進められる
-- トラブル対応の時間を多めに確保しておく

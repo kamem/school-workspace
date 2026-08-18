@@ -7,17 +7,31 @@
 
 ---
 
-## ねらい
+## この回でやること
 
-Reactの基本を踏まえて、Next.js（Reactベースのフレームワーク）でプロジェクトを立ち上げ、App Routerでページを増やせるようになる。
+Reactの基本を踏まえて、Next.js（Reactベースのフレームワーク）でプロジェクトを立ち上げ、App Routerでページを増やす。
 
-## タイムテーブル
+## 手順
 
-- 講義・デモ 60分: Next.jsとは / Vite + Reactとの違い（ルーティング・SSR・画像最適化などが最初から入っている） / `npx create-next-app@latest` の各オプションの意味（TypeScript / ESLint / Tailwind / App Router）
-- ハンズオン 90分: `npx create-next-app` でプロジェクト作成 → フォルダ構造の探検（`app/`、`page.tsx`、`layout.tsx`）→ ページ追加とファイルベースルーティング → `Link` での遷移。全員の環境構築を完了させる
-- 演習・質疑 30分: つまずきの解消、GitHubへpush
+### 1. Next.jsとは何かを知る
 
-## 備考
+Vite + Reactとの違い（ルーティング・SSR・画像最適化などが最初から入っている）と、`npx create-next-app@latest` の各オプションの意味（TypeScript / ESLint / Tailwind / App Router）を押さえる。
+
+### 2. プロジェクトを作成する
+
+`npx create-next-app@latest` でプロジェクトを作成する。
+
+### 3. フォルダ構造を探検する
+
+`app/`、`page.tsx`、`layout.tsx` がそれぞれ何かを確認する。
+
+### 4. ページを追加してファイルベースルーティングを試す
+
+### 5. `Link` でページ間を遷移させる
+
+### 6. GitHubへpush
+
+## 注意
 
 - ViteとNextの関係: Viteはビルドツール、Nextはビルド機構（Turbopack）内蔵のReactフレームワーク。並列の選択肢であり、create-next-appでViteは選べない
 

@@ -24,7 +24,7 @@
 | 2.2 | 2026-09-18 | ツール設定 | [linter・formatter導入（oxlint・Prettier・stylelint・markdownlint・PostCSS）](linter・formatter導入.md) |
 | 2.3 | 2026-09-18 | JavaScript | [TypeScript導入とJavaScriptの基本](TypeScript導入とJavaScriptの基本.md) |
 | 3.1 | 2026-09-25 | React/Next.js | [React導入（Vite + React）・コンポーネント・JSX](React導入.md) |
-| 3.2 | 2026-09-25〜10-23 | React/Next.js | [前期サイト（Xeory Extension）のコンポーネント化](前期サイトのコンポーネント化.md) |
+| 3.2 | 2026-09-25〜2026-10-23 | React/Next.js | [前期サイト（Xeory Extension）のコンポーネント化](前期サイトのコンポーネント化.md) |
 | 3.3 | 2026-11-06 | ツール設定 | [テスト実装（Vitest）](テスト実装（Vitest）.md) |
 | 3.3 | 未定 | ツール設定 | [Storybook導入（コンポーネントカタログ）](Storybook導入.md) |
 | 4.1 | 2026-11-13 | React/Next.js | [Next.js入門](Next.js入門.md) |

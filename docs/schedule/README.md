@@ -19,18 +19,18 @@
 | 1.3  | 環境構築      | [npm入門・ライブラリ導入](npm入門・ライブラリ導入.md)                                                   |
 | 1.4  | 環境構築      | [GitHub深掘り（ブランチ・PR・チーム開発・worktree）](GitHub深掘り.md)                                   |
 | 1.5  | AI・MCP       | [MCP入門・セットアップ](MCP入門・セットアップ.md)                                                       |
-| 2.1  | AI・MCP       | [Copilotカスタマイズ（instructions・Agent Skills）](Copilotカスタマイズ.md)                             |
+| 1.6  | AI・MCP       | [Copilotカスタマイズ（instructions・Agent Skills）](Copilotカスタマイズ.md)                             |
 | 2.1  | ツール設定    | [Vite入門・前期ページの移行](Vite入門・前期ページの移行.md)                                             |
 | 2.2  | ツール設定    | [linter・formatter導入（oxlint・Prettier・stylelint・markdownlint・PostCSS）](linter・formatter導入.md) |
 | 2.3  | JavaScript    | [TypeScript導入とJavaScriptの基本](TypeScript導入とJavaScriptの基本.md)                                 |
 | 3.1  | React/Next.js | [React導入（Vite + React）・コンポーネント・JSX](React導入.md)                                          |
 | 3.2  | React/Next.js | [前期サイト（Xeory Extension）のコンポーネント化](前期サイトのコンポーネント化.md)                      |
 | 3.3  | ツール設定    | [テスト実装（Vitest）](テスト実装（Vitest）.md)                                                         |
-| 3.3  | ツール設定    | [Storybook導入（コンポーネントカタログ）](Storybook導入.md)                                             |
+| 3.4  | ツール設定    | [Storybook導入（コンポーネントカタログ）](Storybook導入.md)                                             |
 | 4.1  | React/Next.js | [Next.js入門](Next.js入門.md)                                                                           |
 | 4.2  | React/Next.js | [デザインシステムを知る・選ぶ・ブログUIを作る](デザインシステム・ブログUI.md)                           |
 | 4.3  | React/Next.js | [microCMS入門（アカウント・スキーマ・入稿）](microCMS入門.md)                                           |
-| 4.3  | React/Next.js | [Webフォント・タイポグラフィ（next/font）](Webフォント・タイポグラフィ.md)                              |
+| 4.4  | React/Next.js | [Webフォント・タイポグラフィ（next/font）](Webフォント・タイポグラフィ.md)                              |
 | 5    | React/Next.js | [microCMSから記事取得・一覧表示](microCMS記事取得・一覧表示.md)                                         |
 | 5.1  | React/Next.js | [記事詳細ページ（動的ルート）](記事詳細ページ.md)                                                       |
 | 5.2  | React/Next.js | [Next.jsでmetadata追加（SEO・OGP）](metadata追加.md)                                                    |

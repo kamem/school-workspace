@@ -31,10 +31,14 @@
 | 4.2  | React/Next.js | [デザインシステムを知る・選ぶ・ブログUIを作る](デザインシステム・ブログUI.md)                           |
 | 4.3  | React/Next.js | [microCMS入門（アカウント・スキーマ・入稿）](microCMS入門.md)                                           |
 | 4.4  | React/Next.js | [Webフォント・タイポグラフィ（next/font）](Webフォント・タイポグラフィ.md)                              |
+| 4.5  | React/Next.js | [画像最適化（next/image）](画像最適化.md)                                                               |
 | 5    | React/Next.js | [microCMSから記事取得・一覧表示](microCMS記事取得・一覧表示.md)                                         |
 | 5.1  | React/Next.js | [記事詳細ページ（動的ルート）](記事詳細ページ.md)                                                       |
 | 5.2  | React/Next.js | [Next.jsでmetadata追加（SEO・OGP）](metadata追加.md)                                                    |
+| 5.3  | React/Next.js | [OGP画像の自動生成（ImageResponse）](OGP画像自動生成.md)                                                |
 | 6    | React/Next.js | [Vercelデプロイ・環境変数](Vercelデプロイ・環境変数.md)                                                 |
+| 7.1  | React/Next.js | [お問い合わせフォーム: フロントエンド実装（react-hook-form・zod）](お問い合わせフォーム・フロントエンド実装.md) |
+| 7.2  | React/Next.js | [お問い合わせフォーム: Server Actions・スプレッドシート連携（GAS）](お問い合わせフォーム・スプレッドシート連携.md) |
 | 13.1 | React/Next.js | [制作課題: デザイン→Next.js実装](制作課題.md)                                                           |
 | －   | AI・MCP       | [Playwright MCP実践](Playwright-MCP実践.md)                                                             |
 | －   | JavaScript    | [SVG＋CSSアニメーションでロゴ実装](課題_SVGロゴアニメーション.md)                                       |

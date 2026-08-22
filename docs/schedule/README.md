@@ -35,6 +35,7 @@
 | 5    | React/Next.js | [microCMSから記事取得・一覧表示](microCMS記事取得・一覧表示.md)                                         |
 | 5.1  | React/Next.js | [記事詳細ページ（動的ルート）](記事詳細ページ.md)                                                       |
 | 5.2  | React/Next.js | [Next.jsでmetadata追加（SEO・OGP）](metadata追加.md)                                                    |
+| 5.3  | React/Next.js | [OGP画像の自動生成（ImageResponse）](OGP画像自動生成.md)                                                |
 | 6    | React/Next.js | [Vercelデプロイ・環境変数](Vercelデプロイ・環境変数.md)                                                 |
 | 7.1  | React/Next.js | [お問い合わせフォーム: フロントエンド実装（react-hook-form・zod）](お問い合わせフォーム・フロントエンド実装.md) |
 | 7.2  | React/Next.js | [お問い合わせフォーム: Server Actions・スプレッドシート連携（GAS）](お問い合わせフォーム・スプレッドシート連携.md) |

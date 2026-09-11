@@ -7,7 +7,7 @@
 | 1.1  | 環境構築      | [ターミナル入門（基本コマンド）](ターミナル入門.md)                                                     |
 | 1.2  | 環境構築      | [Homebrew・mise・Node.jsインストール](Homebrew・mise・Node.jsインストール.md)                           |
 | 1.3  | 環境構築      | [npm入門・ライブラリ導入](npm入門・ライブラリ導入.md)                                                   |
-| 1.4  | 環境構築      | [GitHub深掘り（ブランチ・PR・チーム開発・stash・worktree）](GitHub深掘り.md)                            |
+| 1.4  | 環境構築      | [GitHub深掘り（ブランチ・gh・PR・チーム開発・stash・worktree）](GitHub深掘り.md)                       |
 | 1.5  | AI・MCP       | [MCP入門・セットアップ](MCP入門・セットアップ.md)                                                       |
 | 1.6  | AI・MCP       | [Copilotカスタマイズ（instructions・Agent Skills）](Copilotカスタマイズ.md)                             |
 | 2.1  | ツール設定    | [Vite入門・前期ページの移行](Vite入門・前期ページの移行.md)                                             |

@@ -3,7 +3,6 @@
 - 日付: 2026-09-04
 - 分類: 環境構築
 - 完了: [ ]
-- Notion: https://app.notion.com/3a100b59eb158109b7add0b37e018d57
 
 ---
 

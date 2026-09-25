@@ -3,7 +3,6 @@
 - 日付: 2026-09-18
 - 分類: JavaScript
 - 完了: [ ]
-- Notion: https://app.notion.com/3a200b59eb15813c907bd00d49f7adce
 
 ---
 

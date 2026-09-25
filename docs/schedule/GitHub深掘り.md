@@ -3,7 +3,6 @@
 - 日付: 未定
 - 分類: 環境構築
 - 完了: [ ]
-- Notion: https://app.notion.com/3ad00b59eb1581b99825e1e9db3ead1e
 
 ---
 

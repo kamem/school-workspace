@@ -18,7 +18,7 @@ TS＝JSに型を足したもの。ブラウザで動くのはJS、TSは開発中
 
 ### 2. 既存プロジェクトにTypeScriptを導入する
 
-単位2のプロジェクトに `npm install -D typescript` → `.js` を `.ts` 化して「後から足せる」を体験する（ViteはそのままTSを解釈できる）。
+Vite入門で作ったプロジェクトに `npm install -D typescript` → `.js` を `.ts` 化して「後から足せる」を体験する（ViteはそのままTSを解釈できる）。
 
 ### 3. JSの基本をTSで書きながら覚える
 

@@ -2,56 +2,56 @@
 
 ## 一覧
 
-| 回   | 分類          | テーマ                                                                                                  |
-| ---- | ------------- | ------------------------------------------------------------------------------------------------------- |
-| 1.1  | 環境構築      | [ターミナル入門（基本コマンド）](ターミナル入門.md)                                                     |
-| 1.2  | 環境構築      | [Homebrew・mise・Node.jsインストール](Homebrew・mise・Node.jsインストール.md)                           |
-| 1.3  | 環境構築      | [npm入門・ライブラリ導入](npm入門・ライブラリ導入.md)                                                   |
-| 1.4  | 環境構築      | [ghコマンド導入（GitHub CLI）](ghコマンド導入.md)                                                       |
-| 1.5  | 環境構築      | [GitHub深掘り（ブランチ・PR・チーム開発・stash・worktree）](GitHub深掘り.md)                             |
-| 1.6  | AI・MCP       | [MCP入門・セットアップ](MCP入門・セットアップ.md)                                                       |
-| 1.7  | AI・MCP       | [Copilotカスタマイズ（instructions・Agent Skills）](Copilotカスタマイズ.md)                             |
-| 2.1  | ツール設定    | [Vite入門・前期ページの移行](Vite入門・前期ページの移行.md)                                             |
-| 2.2  | ツール設定    | [linter・formatter導入（oxlint・Prettier・stylelint・markdownlint・PostCSS）](linter・formatter導入.md) |
-| 2.3  | JavaScript    | [TypeScript導入とJavaScriptの基本](TypeScript導入とJavaScriptの基本.md)                                 |
-| 3.1  | React/Next.js | [React導入（Vite + React）・コンポーネント・JSX](React導入.md)                                          |
-| 3.2  | React/Next.js | [前期サイト（Xeory Extension）のコンポーネント化](前期サイトのコンポーネント化.md)                      |
-| 3.3  | ツール設定    | [テスト実装（Vitest）](テスト実装（Vitest）.md)                                                         |
-| 3.4  | ツール設定    | [Storybook導入（コンポーネントカタログ）](Storybook導入.md)                                             |
-| 4.1  | React/Next.js | [Next.js入門](Next.js入門.md)                                                                           |
-| 4.2  | React/Next.js | [デザインシステムを知る・選ぶ・ブログUIを作る](デザインシステム・ブログUI.md)                           |
-| 4.3  | React/Next.js | [microCMS入門（アカウント・スキーマ・入稿）](microCMS入門.md)                                           |
-| 4.4  | React/Next.js | [Webフォント・タイポグラフィ（next/font）](Webフォント・タイポグラフィ.md)                              |
-| 4.5  | React/Next.js | [画像最適化（next/image）](画像最適化.md)                                                               |
-| 5    | React/Next.js | [microCMSから記事取得・一覧表示](microCMS記事取得・一覧表示.md)                                         |
-| 5.1  | React/Next.js | [記事詳細ページ（動的ルート）](記事詳細ページ.md)                                                       |
-| 5.2  | React/Next.js | [Next.jsでmetadata追加（SEO・OGP）](metadata追加.md)                                                    |
-| 5.3  | React/Next.js | [OGP画像の自動生成（ImageResponse）](OGP画像自動生成.md)                                                |
-| 6    | React/Next.js | [Vercelデプロイ・環境変数](Vercelデプロイ・環境変数.md)                                                 |
-| 7.1  | React/Next.js | [お問い合わせフォーム: フロントエンド実装（react-hook-form・zod）](お問い合わせフォーム・フロントエンド実装.md) |
-| 7.2  | React/Next.js | [お問い合わせフォーム: Server Actions・スプレッドシート連携（GAS）](お問い合わせフォーム・スプレッドシート連携.md) |
-| 13.1 | React/Next.js | [制作課題: デザイン→Next.js実装](制作課題.md)                                                           |
-| －   | AI・MCP       | [Playwright MCP実践](Playwright-MCP実践.md)                                                             |
-| －   | JavaScript    | [SVG＋CSSアニメーションでロゴ実装](課題_SVGロゴアニメーション.md)                                       |
-| －   | JavaScript    | [課題集: CSSアニメーション（スケルトン・いいね・テキスト）](課題_CSSアニメーション課題集.md)            |
-| －   | JavaScript    | [課題: ダークモード対応＋トグルスイッチ（太陽⇄月）](課題_ダークモード対応.md)                           |
-| －   | デザイン      | [課題: Figmaでミニデザインシステム作成](課題_デザインシステム作成.md)                                   |
-| －   | React/Next.js | [課題: 複利シミュレーターをReactで実装](課題_複利シミュレーター.md)                                     |
-| －   | 番外編        | [番外編: お金の授業（手取り・詐欺・複利・NISA・保険）](番外編_お金の授業.md)                                |
+| 分類          | テーマ                                                                                                  |
+| ------------- | ------------------------------------------------------------------------------------------------------- |
+| 環境構築      | [ターミナル入門（基本コマンド）](ターミナル入門.md)                                                     |
+| 環境構築      | [Homebrew・mise・Node.jsインストール](Homebrew・mise・Node.jsインストール.md)                           |
+| 環境構築      | [npm入門・ライブラリ導入](npm入門・ライブラリ導入.md)                                                   |
+| 環境構築      | [ghコマンド導入（GitHub CLI）](ghコマンド導入.md)                                                       |
+| 環境構築      | [GitHub深掘り（ブランチ・PR・チーム開発・stash・worktree）](GitHub深掘り.md)                             |
+| AI・MCP       | [MCP入門・セットアップ](MCP入門・セットアップ.md)                                                       |
+| AI・MCP       | [Copilotカスタマイズ（instructions・Agent Skills）](Copilotカスタマイズ.md)                             |
+| ツール設定    | [Vite入門・前期ページの移行](Vite入門・前期ページの移行.md)                                             |
+| ツール設定    | [linter・formatter導入（oxlint・Prettier・stylelint・markdownlint・PostCSS）](linter・formatter導入.md) |
+| JavaScript    | [TypeScript導入とJavaScriptの基本](TypeScript導入とJavaScriptの基本.md)                                 |
+| React/Next.js | [React導入（Vite + React）・コンポーネント・JSX](React導入.md)                                          |
+| ツール設定    | [Storybook導入（コンポーネントカタログ）](Storybook導入.md)                                             |
+| React/Next.js | [前期サイト（Xeory Extension）のコンポーネント化](前期サイトのコンポーネント化.md)                      |
+| ツール設定    | [テスト実装（Vitest）](テスト実装（Vitest）.md)                                                         |
+| React/Next.js | [Next.js入門](Next.js入門.md)                                                                           |
+| React/Next.js | [デザインシステムを知る・選ぶ・ブログUIを作る](デザインシステム・ブログUI.md)                           |
+| React/Next.js | [microCMS入門（アカウント・スキーマ・入稿）](microCMS入門.md)                                           |
+| React/Next.js | [Webフォント・タイポグラフィ（next/font）](Webフォント・タイポグラフィ.md)                              |
+| React/Next.js | [画像最適化（next/image）](画像最適化.md)                                                               |
+| React/Next.js | [microCMSから記事取得・一覧表示](microCMS記事取得・一覧表示.md)                                         |
+| React/Next.js | [記事詳細ページ（動的ルート）](記事詳細ページ.md)                                                       |
+| React/Next.js | [Next.jsでmetadata追加（SEO・OGP）](metadata追加.md)                                                    |
+| React/Next.js | [OGP画像の自動生成（ImageResponse）](OGP画像自動生成.md)                                                |
+| React/Next.js | [Vercelデプロイ・環境変数](Vercelデプロイ・環境変数.md)                                                 |
+| React/Next.js | [お問い合わせフォーム: フロントエンド実装（react-hook-form・zod）](お問い合わせフォーム・フロントエンド実装.md) |
+| React/Next.js | [お問い合わせフォーム: Server Actions・スプレッドシート連携（GAS）](お問い合わせフォーム・スプレッドシート連携.md) |
+| React/Next.js | [制作課題: デザイン→Next.js実装](制作課題.md)                                                           |
+| AI・MCP       | [Playwright MCP実践](Playwright-MCP実践.md)                                                             |
+| JavaScript    | [SVG＋CSSアニメーションでロゴ実装](課題_SVGロゴアニメーション.md)                                       |
+| JavaScript    | [課題集: CSSアニメーション（スケルトン・いいね・テキスト）](課題_CSSアニメーション課題集.md)            |
+| JavaScript    | [課題: ダークモード対応＋トグルスイッチ（太陽⇄月）](課題_ダークモード対応.md)                           |
+| デザイン      | [課題: Figmaでミニデザインシステム作成](課題_デザインシステム作成.md)                                   |
+| React/Next.js | [課題: 複利シミュレーターをReactで実装](課題_複利シミュレーター.md)                                     |
+| 番外編        | [番外編: お金の授業（手取り・詐欺・複利・NISA・保険）](番外編_お金の授業.md)                                |
 
-「回」の番号はこの一覧表でのみ管理する（ファイル名・ファイル内には番号を持たせない）。番号や実施順を変えるときはこの表だけ更新すればよい。
+実施順はこの一覧表の並びで管理する（ファイル名・ファイル内には番号を持たせない）。順番を変えるときはこの表の行を入れ替えればよい。
 
 ## メモ
 
-- 3時間あるので毎回「講義→手を動かす」をセットにする。特に第1回（ターミナル〜npm）はトラブル対応の時間を多めに取る
-- Git・GitHubは前期に実施済みのため後期では扱わない（必要に応じて第1回で軽く復習）
+- 3時間あるので毎回「講義→手を動かす」をセットにする。特に序盤の環境構築（ターミナル〜npm）はトラブル対応の時間を多めに取る
+- Git・GitHubは前期に実施済みのため後期では扱わない（必要に応じて環境構築の回で軽く復習）
 - 9月の3回は学校カレンダー上は前期扱い（回数⑮〜⑱）だが、この授業では後期内容の導入に充てる
-- 「回」は授業週ではなく**学習単位の通し番号**（1〜16）。1.1 / 1.2 は同じ単位内の実施順。「回」の昇順ソートでそのまま実施順に並ぶ。日付はいったん割り当てず、進行は臨機応変
-- 序盤（第1・2回）は「サイトの環境構築」ブロック: 第1回=ターミナル・Node・npm、第2回=Vite（前半）＋linter/formatter（後半）。ここで作った環境を土台に開発へ進む
-- 全体は4フェーズ（単位1〜16）: ①環境構築（1・2）②静的JS＋React解説 — Xeory移行（3）＋Vitestテスト（4）③Next.js + microCMSブログ（5〜10、12/18のデプロイで年内締め）④MCP実践・制作課題（11〜16）
-- JavaScript基礎は独立単位にせず、各回冒頭の「今日のJS/TS」20〜30分で扱う（非同期はmicroCMS入門（単位7）の冒頭）
+- 日付はいったん割り当てず、進行は臨機応変
+- 序盤は「サイトの環境構築」ブロック: ターミナル・Node・npm → Vite＋linter/formatter。ここで作った環境を土台に開発へ進む
+- 全体は4フェーズ: ①環境構築 ②静的JS＋React解説 — Xeory移行＋Storybook・Vitest ③Next.js + microCMSブログ（12/18のデプロイで年内締め）④MCP実践・制作課題
+- JavaScript基礎は独立した回にせず、各回冒頭の「今日のJS/TS」20〜30分で扱う（非同期はmicroCMS入門の冒頭）
 - microCMSは無料枠でOK。記事スキーマ（タイトル・本文・サムネイル・カテゴリ）は講師側でテンプレを決めておく。APIキーは.env管理・コミット禁止を徹底
-- 進みが遅れた場合は、Xeory移行の終盤（10/23）と制作課題（単位13、1/22）を吸収バッファにする
+- 進みが遅れた場合は、Xeory移行の終盤（10/23）と制作課題（1/22）を吸収バッファにする
 - 12月中にmicroCMSブログをデプロイまで完了させると、冬休みに記事を書きためられ、1月からMCP実践に集中できる
 - MCP実践（Notion / Figma / Playwright）はVS Code（GitHub Copilot）のエージェントモードで行う。設定手順は「MCP入門・セットアップ」のページに記載。FigmaのDev Mode MCPは有料プラン要確認・事前に講師PCで検証しておく
 - 2/5は期末試験期間中のため、学校側の試験実施方法に合わせて内容を調整する

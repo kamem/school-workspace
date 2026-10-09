@@ -15,9 +15,9 @@
 | 2.2  | ツール設定    | [linter・formatter導入（oxlint・Prettier・stylelint・markdownlint・PostCSS）](linter・formatter導入.md) |
 | 2.3  | JavaScript    | [TypeScript導入とJavaScriptの基本](TypeScript導入とJavaScriptの基本.md)                                 |
 | 3.1  | React/Next.js | [React導入（Vite + React）・コンポーネント・JSX](React導入.md)                                          |
-| 3.2  | React/Next.js | [前期サイト（Xeory Extension）のコンポーネント化](前期サイトのコンポーネント化.md)                      |
-| 3.3  | ツール設定    | [テスト実装（Vitest）](テスト実装（Vitest）.md)                                                         |
-| 3.4  | ツール設定    | [Storybook導入（コンポーネントカタログ）](Storybook導入.md)                                             |
+| 3.2  | ツール設定    | [Storybook導入（コンポーネントカタログ）](Storybook導入.md)                                             |
+| 3.3  | React/Next.js | [前期サイト（Xeory Extension）のコンポーネント化](前期サイトのコンポーネント化.md)                      |
+| 3.4  | ツール設定    | [テスト実装（Vitest）](テスト実装（Vitest）.md)                                                         |
 | 4.1  | React/Next.js | [Next.js入門](Next.js入門.md)                                                                           |
 | 4.2  | React/Next.js | [デザインシステムを知る・選ぶ・ブログUIを作る](デザインシステム・ブログUI.md)                           |
 | 4.3  | React/Next.js | [microCMS入門（アカウント・スキーマ・入稿）](microCMS入門.md)                                           |

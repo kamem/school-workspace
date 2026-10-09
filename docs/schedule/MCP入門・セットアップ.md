@@ -3,7 +3,6 @@
 - 日付: 2026-09-04
 - 分類: AI・MCP
 - 完了: [ ]
-- Notion: https://app.notion.com/3a100b59eb158129bb60c9d4a7ed45d0
 
 ---
 

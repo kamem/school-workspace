@@ -3,7 +3,6 @@
 - 日付: 未定
 - 分類: JavaScript
 - 完了: [ ]
-- Notion: https://app.notion.com/3a300b59eb1581e59147ca9b913d02a0
 
 ---
 

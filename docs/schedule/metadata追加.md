@@ -3,7 +3,6 @@
 - 日付: 未定
 - 分類: React/Next.js
 - 完了: [ ]
-- Notion: https://app.notion.com/3a900b59eb1581de8bf5fca157119db0
 
 ---
 

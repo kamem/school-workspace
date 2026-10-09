@@ -3,7 +3,6 @@
 - 日付: 2026-09-18
 - 分類: ツール設定
 - 完了: [ ]
-- Notion: https://app.notion.com/3a100b59eb158181958ffdd8eb211594
 
 ---
 

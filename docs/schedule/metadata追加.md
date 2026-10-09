@@ -24,7 +24,7 @@
 
 ### 3. 動的metadata
 
-記事詳細ページ（単位9）に `generateMetadata` を追加し、**microCMSの記事タイトル・サムネイルがそのままOGPになる**ようにする。
+記事詳細ページに `generateMetadata` を追加し、**microCMSの記事タイトル・サムネイルがそのままOGPになる**ようにする。
 
 ### 4. OGP画像の設定
 

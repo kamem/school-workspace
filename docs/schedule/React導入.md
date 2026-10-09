@@ -8,13 +8,13 @@
 
 ## この回でやること
 
-第2回で理解したViteの上にReactを導入し、「UIをコンポーネントで組み立てる」考え方とJSXの基本を身につける。自己紹介カードなど小さなコンポーネントを作り、propsで内容を出し分けるところまでやる。
+Vite入門で理解したViteの上にReactを導入し、「UIをコンポーネントで組み立てる」考え方とJSXの基本を身につける。自己紹介カードなど小さなコンポーネントを作り、propsで内容を出し分けるところまでやる。
 
 ## 手順
 
 ### 1. Reactとは何かを知る
 
-Reactを使う理由と「コンポーネント」という考え方を押さえる。Reactは第1回のSwiperと同じ、npmで入るただのライブラリ（第2回のvanillaプロジェクトに `npm install react react-dom` するだけでも入る）。
+Reactを使う理由と「コンポーネント」という考え方を押さえる。Reactはnpm入門のSwiperと同じ、npmで入るただのライブラリ（Vite入門のvanillaプロジェクトに `npm install react react-dom` するだけでも入る）。
 
 ### 2. プロジェクト作成
 
@@ -39,7 +39,7 @@ npm run dev
 
 ### 4. 構造の確認（ここを丁寧に）
 
-読み込みの流れを追う: `index.html` → `src/main.tsx`（ReactをHTMLの `#root` に接続）→ `src/App.tsx`（画面の中身）。第2回のvanilla構成との違いを見る。
+読み込みの流れを追う: `index.html` → `src/main.tsx`（ReactをHTMLの `#root` に接続）→ `src/App.tsx`（画面の中身）。Vite入門のvanilla構成との違いを見る。
 
 - 触るのは基本 `App.tsx` と `src/` 以下
 - `App.tsx` を編集して保存 → 即座に画面が変わる（HMR）ことを最初に体験する
@@ -54,11 +54,11 @@ JSXのルール（`className`、`{}` でのJS埋め込み、単一ルート要�
 
 ### 7. コンポーネントをもう1つ自作し、lint/formatter設定を適用してpush
 
-lint/formatterはやり直さない: 第2回の設定ファイル一式（oxlint・Prettier・stylelintなど）を新プロジェクトに**コピーするだけ**で効く。「設定をファイルにしておけば次のプロジェクトに持ち込める」という第2回の答え合わせになる。
+lint/formatterはやり直さない: linter・formatter導入の設定ファイル一式（oxlint・Prettier・stylelintなど）を新プロジェクトに**コピーするだけ**で効く。「設定をファイルにしておけば次のプロジェクトに持ち込める」というlinter・formatter導入の回の答え合わせになる。
 
 ## 注意
 
-- 第2回のvanillaプロジェクトには続かず、**React用に新規プロジェクトを作る**。`npm create vite` は新規生成専用で、既存プロジェクトにテンプレートを後乗せできないため
+- Vite入門のvanillaプロジェクトには続かず、**React用に新規プロジェクトを作る**。`npm create vite` は新規生成専用で、既存プロジェクトにテンプレートを後乗せできないため
 - Next.jsはReactの基本がわかってから後の回で導入する（NextはReactベースのフレームワーク）
 - ViteとNextの関係は混同しやすいので注意: Viteはビルドツール（中でReact等を選ぶ）、Nextはビルド機構内蔵のReactフレームワーク。並列の選択肢であり組み合わせるものではない
 

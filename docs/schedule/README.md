@@ -17,6 +17,7 @@
 | React/Next.js | [React導入（Vite + React）・コンポーネント・JSX](React導入.md)                                          |
 | ツール設定    | [Storybook導入（コンポーネントカタログ）](Storybook導入.md)                                             |
 | React/Next.js | [前期サイト（Xeory Extension）のコンポーネント化](前期サイトのコンポーネント化.md)                      |
+| React/Next.js | [Vercelデプロイ・環境変数](Vercelデプロイ・環境変数.md)                                                 |
 | ツール設定    | [テスト実装（Vitest）](テスト実装（Vitest）.md)                                                         |
 | React/Next.js | [Next.js入門](Next.js入門.md)                                                                           |
 | React/Next.js | [デザインシステムを知る・選ぶ・ブログUIを作る](デザインシステム・ブログUI.md)                           |
@@ -27,7 +28,6 @@
 | React/Next.js | [記事詳細ページ（動的ルート）](記事詳細ページ.md)                                                       |
 | React/Next.js | [Next.jsでmetadata追加（SEO・OGP）](metadata追加.md)                                                    |
 | React/Next.js | [OGP画像の自動生成（ImageResponse）](OGP画像自動生成.md)                                                |
-| React/Next.js | [Vercelデプロイ・環境変数](Vercelデプロイ・環境変数.md)                                                 |
 | React/Next.js | [お問い合わせフォーム: フロントエンド実装（react-hook-form・zod）](お問い合わせフォーム・フロントエンド実装.md) |
 | React/Next.js | [お問い合わせフォーム: Server Actions・スプレッドシート連携（GAS）](お問い合わせフォーム・スプレッドシート連携.md) |
 | React/Next.js | [制作課題: デザイン→Next.js実装](制作課題.md)                                                           |
@@ -48,7 +48,7 @@
 - 9月の3回は学校カレンダー上は前期扱い（回数⑮〜⑱）だが、この授業では後期内容の導入に充てる
 - 日付はいったん割り当てず、進行は臨機応変
 - 序盤は「サイトの環境構築」ブロック: ターミナル・Node・npm → Vite＋linter/formatter。ここで作った環境を土台に開発へ進む
-- 全体は4フェーズ: ①環境構築 ②静的JS＋React解説 — Xeory移行＋Storybook・Vitest ③Next.js + microCMSブログ（12/18のデプロイで年内締め）④MCP実践・制作課題
+- 全体は4フェーズ: ①環境構築 ②静的JS＋React解説 — Storybook・Xeory移行→Vercel公開・Vitest ③Next.js + microCMSブログ ④MCP実践・制作課題
 - JavaScript基礎は独立した回にせず、各回冒頭の「今日のJS/TS」20〜30分で扱う（非同期はmicroCMS入門の冒頭）
 - microCMSは無料枠でOK。記事スキーマ（タイトル・本文・サムネイル・カテゴリ）は講師側でテンプレを決めておく。APIキーは.env管理・コミット禁止を徹底
 - 進みが遅れた場合は、Xeory移行の終盤（10/23）と制作課題（1/22）を吸収バッファにする

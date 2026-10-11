@@ -30,6 +30,10 @@ Vite + Reactとの違い（ルーティング・SSR・画像最適化などが�
 
 ### 6. GitHubへpush
 
+### 7. Vercelに連携する
+
+[Vercelデプロイ回](Vercelデプロイ・環境変数.md)と同じ手順で、Next.jsプロジェクトも新しいプロジェクトとして連携しておく。以降はpushするだけで本番に反映される。
+
 ## 注意
 
 - ViteとNextの関係: Viteはビルドツール、Nextはビルド機構（Turbopack）内蔵のReactフレームワーク。並列の選択肢であり、create-next-appでViteは選べない

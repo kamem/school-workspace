@@ -28,6 +28,7 @@
 | React/Next.js | [記事詳細ページ（動的ルート）](記事詳細ページ.md)                                                       |
 | React/Next.js | [Next.jsでmetadata追加（SEO・OGP）](metadata追加.md)                                                    |
 | React/Next.js | [OGP画像の自動生成（ImageResponse）](OGP画像自動生成.md)                                                |
+| React/Next.js | [PWA対応（ホーム画面に追加できるブログにする）](PWA対応.md)                                             |
 | React/Next.js | [お問い合わせフォーム: フロントエンド実装（react-hook-form・zod）](お問い合わせフォーム・フロントエンド実装.md) |
 | React/Next.js | [お問い合わせフォーム: Server Actions・スプレッドシート連携（GAS）](お問い合わせフォーム・スプレッドシート連携.md) |
 | React/Next.js | [制作課題: デザイン→Next.js実装](制作課題.md)                                                           |
